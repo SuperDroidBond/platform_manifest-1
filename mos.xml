@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- build -->
+  <project path="build/make" name="platform_build_make" remote="mos" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="bionic" name="platform_bionic" remote="mos" />
+  <project path="build/blueprint" name="platform_build_blueprint" groups="pdk,tradefed" remote="mos" />
+  <project path="build/kati" name="platform_build_kati" remote="mos" />
+  <project path="build/soong" name="platform_build_soong" remote="mos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+<!-- frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="mos" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="mos" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="mos" />
+<!-- hardware -->
+  <project path="hardware/mos/interfaces" name="platform_hardware_mos_interfaces" groups="pdk" remote="mos" >
+    <copyfile dest="hardware/mos/Android.bp" src="Android.bp"/>
+  </project>
+<!-- system -->
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="mos" />
+<!-- vendors -->
+  <project path="vendor/mos" name="platform_vendor_mos" remote="mos" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="mos" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="mos" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="mos" />
+    <copyfile src="Android.bp" dest="vendor/qcom/opensource/Android.bp" />
+</manifest>
