@@ -33,11 +33,18 @@
   <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="mos" />
   <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom,pdk" remote="mos" />
   <project path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="mos" />
+<!-- packages -->  
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="mos" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="mos" />
+  <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="mos" /> 
 <!-- system -->
   <project path="system/core" name="platform_system_core" groups="pdk" remote="mos" />
-  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="mos" />
   <project path="system/media" name="platform_system_media" groups="pdk" remote="mos" />
+  <project path="system/qcom" name="platform_system_qcom" groups="pdk" remote="mos" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="mos" />
+
 <!-- vendors -->
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="mos" />
   <project path="vendor/mos" name="platform_vendor_mos" remote="mos" />
   <project path="vendor/qcom-opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="mos" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="mos" />
