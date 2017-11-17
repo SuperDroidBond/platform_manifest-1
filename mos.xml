@@ -25,6 +25,7 @@
   <project path="frameworks/av" name="platform_frameworks_av" remote="mos" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="mos" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="mos" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="mos" />
 <!-- hardware -->
   <project path="hardware/mos/interfaces" name="platform_hardware_mos_interfaces" groups="pdk" remote="mos" >
     <copyfile dest="hardware/mos/Android.bp" src="Android.bp"/>
@@ -33,10 +34,14 @@
   <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="mos" />
   <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom,pdk" remote="mos" />
   <project path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="mos" />
+  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="mos" />
+  <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" remote="mos-caf" />
 <!-- packages -->  
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="mos" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="mos" />
   <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="mos" /> 
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="mos" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="mos" />
 <!-- system -->
   <project path="system/core" name="platform_system_core" groups="pdk" remote="mos" />
   <project path="system/media" name="platform_system_media" groups="pdk" remote="mos" />
