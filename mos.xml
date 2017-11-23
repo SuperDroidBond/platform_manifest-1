@@ -20,10 +20,13 @@
   </project>
 <!-- device -->
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="pdk" remote="mos" />
+  <project path="device/mos/sepolicy" name="platform_device_mos_sepolicy" remote="mos" />
 <!-- external -->
-  <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="mos" />
+  <project path="external/bson" name="platform_external_bson" remote="mos" />
   <project path="external/connectivity" name="platform_external_connectivity" groups="pdk" remote="mos" />
+  <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="mos" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="mos" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" groups="pdk" remote="mos" />
 <!-- frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="mos" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="mos" />
@@ -37,6 +40,7 @@
   <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom,pdk" remote="mos" />
   <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom,pdk" remote="mos-caf" />
   <project path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="mos" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="mos" />
   <project path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom,pdk" remote="mos" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="mos" />
   <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="mos" />
