@@ -22,6 +22,11 @@
   <remote  name="los"
            fetch="https://github.com/LineageOS"
            revision="lineage-15.0" />
+		   
+   <remote name="caf"
+           revision="refs/tags/LA.UM.6.4.r1-04300-8x98.0"
+           fetch="https://source.codeaurora.org/"
+           review="https://source.codeaurora.org/" />
 		  
 <!-- AOSP -->
   <project path="art" name="platform/art" groups="pdk" />
@@ -559,8 +564,10 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
-  <!-- MOS Repos -->
-  <include name="mos.xml" />
+  <!-- CAF Repos -->
+  <include name="caf.xml" />
   <!-- LOS Repos -->
   <include name="los.xml" />
+  <!-- MOS Repos -->
+  <include name="mos.xml" />
 </manifest>
