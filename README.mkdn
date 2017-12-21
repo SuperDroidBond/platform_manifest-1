@@ -1,0 +1,20 @@
+Mainstage OS
+AOSP The Pure Android Experience!
+
+Getting Started
+
+To get started with Cardinal-AOSP, you'll need to get familiar with Git and Repo.
+
+To initialize your local repository, use this command:
+
+repo init -u https://github.com/MainstageOS/platform_manifest.git -b oreo
+
+Let's Sync the Sources!:
+
+repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
+
+Compiling the source!
+
+. build/envsetup.sh
+lunch mos_$device-userdebug
+mka bacon -j8
